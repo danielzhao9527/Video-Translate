@@ -1,0 +1,37 @@
+.video-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.url-input {
+  width: 70%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.load-button {
+  padding: 8px 16px;
+}
+
+#video-player {
+  width: 100%;
+  max-height: 500px;
+}
+
+.subtitles {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.language-select {
+  margin-top: 10px;
+}
+
+.translate-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+}
+
+/* 可以根据需要添加更多样式 */

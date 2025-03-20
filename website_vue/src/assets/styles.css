@@ -1,0 +1,98 @@
+/* 全局容器 */
+.video-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* 搜索框靠上 */
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 50px; /* 调整顶部间距 */
+}
+
+/* 标题样式 */
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* 搜索框容器 */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* 搜索框样式 */
+.search-input {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+
+/* 搜索按钮样式 */
+.search-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* 视频播放器容器 */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%; /* 确保容器宽度占满页面 */
+}
+
+/* 视频播放器样式 */
+.video-player {
+  width: 70%; /* 调整为页面宽度的90% */
+  max-width: 1400px; /* 增大视频最大宽度 */
+  height: auto; /* 保持视频比例 */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 响应式布局：对于小屏设备（如手机） */
+@media (max-width: 768px) {
+  .video-player {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 20px;
+  }
+
+  .search-input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
